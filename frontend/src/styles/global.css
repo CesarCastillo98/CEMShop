@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+  background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #333;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #c3cfe2, #f5f7fa);
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+/* Cards Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #222;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.card button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  color: #666;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: #007BFF;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 calc(50% - 2rem);
+  }
+
+  .navbar {
+      flex-direction: column;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      flex: 1 1 100%;
+  }
+
+  .hero h1 {
+      font-size: 1.5rem;
+  }
+
+  .hero p {
+      font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+/* Home and Lists */
+.home {
+  display: flex; /* Flexbox para organizar las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente fila */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Tarjeta de Productos */
+.productos-card {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones */
+  max-width: 300px; /* Ancho máximo fijo para tarjetas */
+  flex: 1 1 calc(300px - 20px); /* Tarjetas adaptables dentro del contenedor */
+}
+
+.productos-card:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Imagen dentro de la tarjeta */
+.productos-card img {
+  width: 100%; /* Imagen ocupa todo el ancho disponible */
+  border-bottom: 1px solid #ddd; /* Separación entre imagen y contenido */
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+/* Títulos */
+.productos-card h3 {
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 10px;
+}
+
+/* Descripciones */
+.productos-card p {
+  font-size: 1rem; /* Tamaño del texto */
+  color: #333; /* Texto oscuro */
+  margin-bottom: 20px;
+}
+
+/* Botón dentro de la tarjeta */
+.productos-card button {
+  background-color: #007bff; /* Azul */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px; /* Tamaño del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.productos-card button:hover {
+  background-color: #0056b3; /* Azul más oscuro al hacer hover */
+}
+
+/* Indicador de carga */
+.cargando {
+  font-size: 1.2rem; /* Tamaño del texto */
+  color: #666; /* Texto gris */
+  text-align: center;
+  margin: 50px 0;
+}
